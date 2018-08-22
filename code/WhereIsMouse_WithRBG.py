@@ -7,8 +7,8 @@ try:
         x, y = pyautogui.position()
         positionStr = 'X: ' + str(x).rjust(4) + ', Y: ' + str(y).rjust(4)
         # Add Code Here!!!!!
-        # pixelColor = pyautogui.pixel(x, y)
-        # pixelColor = pyautogui.screenshot().getpixel((x, y))
+        #pixelColor = pyautogui.pixel(x, y)
+        pixelColor = pyautogui.screenshot().getpixel((x, y))
         positionStr += ', RGB: (' + str(pixelColor[0]).rjust(3)
         positionStr += ', ' + str(pixelColor[1]).rjust(3)
         positionStr += ', ' + str(pixelColor[2]).rjust(3) + ')'
