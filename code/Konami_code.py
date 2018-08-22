@@ -1,0 +1,10 @@
+import time, pyautogui, subprocess
+subprocess.Popen(['open', '/Applications/Safari.app/'])
+time.sleep(1)
+pyautogui.typewrite('https://playoverwatch.com/zh-tw/', interval=0.25)
+pyautogui.press('enter')
+time.sleep(1)
+x, y = pyautogui.size()
+time.sleep(1)
+pyautogui.click(x/2, y/2)
+pyautogui.press(['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'], interval=0.5)
